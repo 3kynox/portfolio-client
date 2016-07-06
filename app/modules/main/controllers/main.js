@@ -1,4 +1,4 @@
-﻿angular.module('adminApp').controller('mainCtrl',
+﻿angular.module('adminApp').controller('MainCtrl',
     ['$scope', 'applicationService', 'quickViewService', 'builderService', 'pluginsService', '$location',
         function ($scope, applicationService, quickViewService, builderService, pluginsService, $location) {
             $(document).ready(function () {

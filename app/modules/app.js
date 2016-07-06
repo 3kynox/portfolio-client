@@ -14,7 +14,8 @@ var MakeApp = angular
       'ui.router',
       'ui.bootstrap',
       'dashboardApp',
-      'layoutApp'
+      'layoutApp',
+      'pagesApp'
   ])
     .config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
         $ocLazyLoadProvider.config({

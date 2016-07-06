@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc overview
- * @name dashboardApp
+ * @name layoutApp
  * @description
  * # layoutApp
  *
