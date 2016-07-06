@@ -26,6 +26,7 @@ angular
         $stateProvider
             .state('main', {
                 url: '/main',
+                controller: 'MainCtrl',
                 templateUrl: 'modules/main/views/main.html',
                 resolve: {
                     loadMyDirectives: function ($ocLazyLoad) {
@@ -33,6 +34,7 @@ angular
                         {
                             name: 'adminApp',
                             files: [
+                                'modules/main/controllers/main.js',
                                 'modules/main/directives/header.js',
                                 'modules/main/directives/sidebar.js'
                             ]

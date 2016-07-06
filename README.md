@@ -15,7 +15,7 @@ Le module ui-router permet de structurer le contenu avec une URL composée :
 
 - http://localhost/main/dashboard
 
-- La partie "main" de l'URL traite la structure globale du site incluant 2 directives pour le header et la sidebar
+- La partie "main" de l'URL traite la structure globale du site incluant 2 directives pour le header et la sidebar.
 - La partie "dashboard" (ou tout autre page) traite les différents contenus.
 
 L'utilisation du module 'ocLazyLoad' permet de ne charger que les scripts indispensables à chaque partie du site.
