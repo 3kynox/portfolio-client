@@ -252,7 +252,7 @@ angular.module('adminApp').factory('applicationService', ['pluginsService', func
                     }
                 }
 
-                $.backstretch(["../../../assets/global/images/gallery/bg1.jpg", "../../../assets/global/images/gallery/bg2.jpg", "../../../assets/global/images/gallery/bg3.jpg", "../../../assets/global/images/gallery/bg4.jpg"], {
+                $.backstretch(["modules/main/assets/images/bg1.jpg", "modules/main/assets/images/bg2.jpg", "modules/main/assets/images/bg3.jpg", "modules/main/assets/images/bg4.jpg"], {
                     fade: 3000,
                     duration: 4000
                 });
