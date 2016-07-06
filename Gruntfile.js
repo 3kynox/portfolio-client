@@ -211,6 +211,7 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/index.html'],
         ignorePath:  /\.\.\//,
         exclude: [
+          'bower_components/jquery/dist/jquery.js',
           'bower_components/angular-animate/angular-animate.js',
           'bower_components/angular-cookies/angular-cookies.js',
           'bower_components/angular-resource/angular-resource.js',
