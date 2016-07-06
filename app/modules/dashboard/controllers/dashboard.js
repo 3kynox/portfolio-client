@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name adminApp.controller:MainCtrl
+ * @name adminApp.controller:DashboardCtrl
  * @description
- * # MainCtrl
+ * # DashboardCtrl
  * Controller of the adminApp
  */
 angular.module('adminApp')

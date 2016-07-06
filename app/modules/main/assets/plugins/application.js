@@ -28,7 +28,7 @@ angular.module('adminApp').factory('applicationService', ['pluginsService', func
         setTimeout(function () {
             $('.loader-overlay').addClass('loaded');
             $('body > section').animate({
-                opacity: 1,
+                opacity: 1
             }, 400);
         }, 500);
     });

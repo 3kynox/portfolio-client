@@ -34,11 +34,11 @@
         <![endif]-->
 
         <!-- BEGIN PAGE SPINNER -->
-        <!--<div ng-spinner-loader class="page-spinner-loader">-->
-            <!--<div class="bounce1"></div>-->
-            <!--<div class="bounce2"></div>-->
-            <!--<div class="bounce3"></div>-->
-        <!--</div>-->
+        <div ng-spinner-loader class="page-spinner-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
         <!-- END PAGE SPINNER -->
 
         <!-- Add your site or application content here -->
@@ -95,8 +95,8 @@
                         </div>
                     </div>
                     <ul class="nav nav-sidebar">
-                        <li ng-class="{ active  : isActive('/')}"><a href="#/"><i class="icon-home"></i><span>Dashboard</span></a></li>
-                        <li ng-class="{ active  : isActive('/layout-api')}"><a href="#layout-api"><i class="icon-layers"></i><span class="pull-right badge badge-primary">5</span><span>Layouts</span></a></li>
+                        <li ng-class="{ active  : isActive('/main/dashboard')}"><a href="#/main/dashboard"><i class="icon-home"></i><span>Dashboard</span></a></li>
+                        <li ng-class="{ active  : isActive('/main/layout')}"><a href="#/main/layout"><i class="icon-layers"></i><span class="pull-right badge badge-primary">5</span><span>Layouts</span></a></li>
                         <li class="nav-parent">
                             <a href=""><i class="icon-docs"></i><span>Pages </span><span class="fa arrow"></span></a>
                             <ul class="children collapse">
@@ -226,7 +226,6 @@
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
         <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -237,6 +236,8 @@
 
         <script src="modules/dashboard/dashboardApp.js"></script>
         <script src="modules/dashboard/dashboardRoute.js"></script>
+        <script src="modules/layout/layoutApp.js"></script>
+        <script src="modules/layout/layoutRoute.js"></script>
         <!-- endbuild -->
 
         <script src="modules/main/assets/plugins/jquery/jquery-migrate-1.2.1.min.js"></script>

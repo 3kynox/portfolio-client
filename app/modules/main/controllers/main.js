@@ -24,7 +24,7 @@
                     $('.nav.nav-sidebar .nav-parent .children').slideUp(200);
                     $('.nav-sidebar .arrow').removeClass('active');
                 }
-                if($location.$$path == '/'){
+                if($location.$$path == '/main/dashboard'){
                     $('body').addClass('dashboard');
                 }
                 else{
