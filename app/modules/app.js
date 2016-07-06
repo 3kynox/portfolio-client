@@ -34,6 +34,10 @@ angular
                         {
                             name: 'adminApp',
                             files: [
+                                'modules/main/assets/plugins/builder.js',
+                                'modules/main/assets/plugins/application.js',
+                                'modules/main/assets/plugins/plugins.js',
+                                'modules/main/assets/plugins/quickview.js',
                                 'modules/main/controllers/main.js',
                                 'modules/main/directives/header.js',
                                 'modules/main/directives/sidebar.js'
