@@ -10,7 +10,6 @@ angular.module('adminApp')
     .directive('header', function() {
         return {
             templateUrl: 'modules/main/views/partials/header.html',
-            restrict: 'E',
-            replace: true
+            restrict: 'E'
         };
     });
