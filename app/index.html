@@ -28,7 +28,7 @@
         <link href="modules/main/assets/styles/layout.css" rel="stylesheet">
         <!-- END LAYOUT STYLE -->
     </head>
-    <body ng-app="adminApp" class="fixed-topbar fixed-sidebar theme-sdtl color-default">
+    <body ng-app="adminApp" class="fixed-topbar fixed-sidebar theme-sdtl color-default" ng-controller="MainCtrl">
         <!--[if lte IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -226,6 +226,7 @@
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
         <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -252,6 +253,12 @@
         <script src="modules/main/assets/plugins/pages/search.js"></script>
         <script src="modules/main/assets/plugins/dropzone/dropzone.min.js"></script>
         <script src="modules/main/assets/plugins/slick/slick.js"></script>
+
+        <script src="modules/main/assets/plugins/builder.js"></script>
+        <script src="modules/main/assets/plugins/application.js"></script>
+        <script src="modules/main/assets/plugins/plugins.js"></script>
+        <script src="modules/main/assets/plugins/quickview.js"></script>
+        <script src="modules/main/controllers/main.js"></script>
 
         <script src="modules/main/assets/plugins/material.js"></script>
     </body>

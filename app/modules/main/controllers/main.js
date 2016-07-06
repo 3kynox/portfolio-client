@@ -1,4 +1,4 @@
-﻿angular.module('adminApp').controller('MainCtrl',
+﻿angular.module('adminApp').controller('mainCtrl',
     ['$scope', 'applicationService', 'quickViewService', 'builderService', 'pluginsService', '$location',
         function ($scope, applicationService, quickViewService, builderService, pluginsService, $location) {
             $(document).ready(function () {
@@ -24,7 +24,7 @@
                     $('.nav.nav-sidebar .nav-parent .children').slideUp(200);
                     $('.nav-sidebar .arrow').removeClass('active');
                 }
-                if($location.$$path == '/main/dashboard'){
+                if($location.$$path == '/'){
                     $('body').addClass('dashboard');
                 }
                 else{
