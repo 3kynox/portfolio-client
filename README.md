@@ -34,3 +34,10 @@ Lancez `grunt` ou `grunt build` pour la génération du projet et `grunt serve` 
 ## Testing
 
 La commande `grunt test` lancera les tests unitaires avec karma.
+
+## Important Bug
+
+Normalement, le sidebar, le header et le contenu principal doit être placé dans les directives associées mais seulement
+le contenu principal est actuellement présent. Le javascript ne s'execute pas si on utilise les directives.
+
+En attendant de trouver une solution viable, la sidebar et le header sont placés sur la page d'index.

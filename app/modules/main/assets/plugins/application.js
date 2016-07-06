@@ -19,7 +19,7 @@ var headerLeftWidth = $('.header-left').width();
 var headerRightWidth = $('.header-right').width();
 var start = delta = end = 0;
 
-// $.cookie.defaults.path = '/';
+$.cookie.defaults.path = '/';
 
 angular.module('adminApp').factory('applicationService', ['pluginsService', function (pluginsService) {
 

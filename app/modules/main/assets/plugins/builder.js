@@ -8,7 +8,7 @@ angular.module('adminApp')
       /* ============================================================
        * Builder Script
        =========================================================== */
-       // $.cookie.defaults.path = '/';
+       $.cookie.defaults.path = '/';
 
       /**** BUILDER FUNCTIONS ****/
       function toggleBuilder() {

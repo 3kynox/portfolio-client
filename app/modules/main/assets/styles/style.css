@@ -74,7 +74,7 @@ body {
   -ms-text-size-adjust: 100%;
 }
 body > section {
-  opacity: 0;
+  opacity: 1;
   height: 100%;
 }
 body p strong {
