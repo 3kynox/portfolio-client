@@ -1,0 +1,22 @@
+.myphoto img{
+    padding-bottom: 20px;
+}
+
+ul.list-check {
+    margin: 0px;
+    list-style: none;
+    padding-bottom: 100px;
+}
+
+ul.list-check li {
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+ul.list-check li::before {
+  content: "\f00c";
+  font-family: fontawesome;
+  color: rgb(104, 195, 163);
+  margin-right: 10px;
+}

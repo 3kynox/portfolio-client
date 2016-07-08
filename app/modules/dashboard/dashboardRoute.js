@@ -22,6 +22,7 @@ angular
                     return $ocLazyLoad.load({
                         name:'adminApp',
                         files:[
+                            'modules/dashboard/assets/styles/dashboard.css',
                             'modules/dashboard/controllers/dashboard.js'
                         ]
                     })
