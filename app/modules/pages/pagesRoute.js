@@ -28,16 +28,31 @@ angular
                 }
             }
         })
-        .state('main.pages-blank', {
-            url: '/pages-blank',
-            controller: 'BlankCtrl',
-            templateUrl: 'modules/pages/views/blank.html',
+        .state('main.pages-skills', {
+            url: '/pages-skills',
+            controller: 'SkillsCtrl',
+            templateUrl: 'modules/pages/views/skills.html',
             resolve: {
                 loadMyFiles:function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         name:'adminApp',
                         files:[
-                            'modules/pages/controllers/blank.js'
+                            'modules/pages/controllers/skills.js'
+                        ]
+                    })
+                }
+            }
+        })
+        .state('main.pages-projects', {
+            url: '/pages-projects',
+            controller: 'ProjectsCtrl',
+            templateUrl: 'modules/pages/views/projects.html',
+            resolve: {
+                loadMyFiles:function($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name:'adminApp',
+                        files:[
+                            'modules/pages/controllers/projects.js'
                         ]
                     })
                 }

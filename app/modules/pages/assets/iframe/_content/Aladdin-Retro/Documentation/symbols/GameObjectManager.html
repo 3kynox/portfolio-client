@@ -1,0 +1,1171 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="utf-8"></meta>
+		<meta name="generator" content="JsDoc Toolkit"></meta>
+		<title>GameObjectManager | JsDoc Reference</title>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"></meta>
+		<meta name="mobileoptimized" content="0"></meta>
+	
+		<link rel="stylesheet" href="../css/all.css" media="all"></link>
+		<link rel="stylesheet" href="../css/handheld.css" media="only screen and (max-width: 660px)"></link>
+		<link rel="stylesheet" href="../css/handheld.css" media="handheld"></link>
+		<link rel="stylesheet" href="../css/screen.css" media="screen and (min-width: 661px)"></link>
+
+		<script src="../javascript/all.js"></script>
+		<!--[if lt IE 9]>
+			<script src="../javascript/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+<div class="index">
+	<div class="menu">
+		<div class="indexLinks">
+			<a href="../index.html">Classes</a>
+			<a href="../files.html">Files</a>
+		</div>
+	
+		<h2 class="heading1">Classes</h2>
+		
+		<input type="text" name="classFilter" class="classFilter" id="ClassFilter" placeholder="Filter"></input>
+		
+		<nav>
+			<ul class="classList" id="ClassList">
+				
+					<li><a href="../symbols/_global_.html">_global_</a></li>
+				
+					<li><a href="../symbols/AnimatedGameObject.html">AnimatedGameObject</a></li>
+				
+					<li><a href="../symbols/ApplicationManager.html">ApplicationManager</a></li>
+				
+					<li><a href="../symbols/Array.html">Array</a></li>
+				
+					<li><a href="../symbols/Date.html">Date</a></li>
+				
+					<li><a href="../symbols/GameObject.html">GameObject</a></li>
+				
+					<li><a href="../symbols/GameObjectManager.html">GameObjectManager</a></li>
+				
+					<li><a href="../symbols/Level.html">Level</a></li>
+				
+					<li><a href="../symbols/LevelEndPost.html">LevelEndPost</a></li>
+				
+					<li><a href="../symbols/MainMenu.html">MainMenu</a></li>
+				
+					<li><a href="../symbols/Object.html">Object</a></li>
+				
+					<li><a href="../symbols/Player.html">Player</a></li>
+				
+					<li><a href="../symbols/Powerup.html">Powerup</a></li>
+				
+					<li><a href="../symbols/Rectangle.html">Rectangle</a></li>
+				
+					<li><a href="../symbols/RegExp.html">RegExp</a></li>
+				
+					<li><a href="../symbols/RepeatingGameObject.html">RepeatingGameObject</a></li>
+				
+					<li><a href="../symbols/ResourceManager.html">ResourceManager</a></li>
+				
+					<li><a href="../symbols/VisualGameObject.html">VisualGameObject</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	<div class="fineprint" style="clear:both">
+		
+		Documentation generator: <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0<br />
+		Template: <a href="http://www.thebrightlines.com/2010/05/06/new-template-for-jsdoctoolkit-codeview/" target="_blank">Codeview</a> 1.2<br />
+		Generated on: 2010-11-8 21:56
+	</div>
+</div>
+
+<div class="index indexStatic"></div>
+
+<div class="content">
+	<div class="innerContent">
+		<h1 class="classTitle">
+			
+			Class <span>GameObjectManager</span>
+		</h1>
+		
+		<div class="intro">
+			<p class="description summary">
+				
+			</p>
+				
+			
+				<ul class="summary">
+					
+					
+					
+						<li>Defined in: <a href="../symbols/src/GameObjectManager.js.html">GameObjectManager.js</a></li>
+					
+						
+				</ul>
+			
+		</div>
+		
+		
+			<div class="props">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class GameObjectManager.">
+					<caption class="sectionTitle">Class Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Constructor Attributes</th>
+							<th scope="col">Constructor Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription" >
+								<div class="fixedFont">
+									<b><a href="../symbols/GameObjectManager.html#constructor">GameObjectManager</a></b>()
+								</div>
+								<div class="description">A manager for all the objects in the game</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+		
+		
+			
+			
+				<div class="props">
+					<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class GameObjectManager.">
+						<caption class="sectionTitle">Field Summary</caption>
+						
+						<thead>
+							<tr>
+								<th scope="col">Field Attributes</th>
+								<th scope="col">Field Name and Description</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#addedGameObjects">addedGameObjects</a></b>
+										</div>
+										<div class="description">An array of new game objects</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#backBuffer">backBuffer</a></b>
+										</div>
+										<div class="description">A reference to the in-memory canvas used as a back buffer</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#backBufferContext2D">backBufferContext2D</a></b>
+										</div>
+										<div class="description">A reference to the backbuffer 2D context</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#canvas">canvas</a></b>
+										</div>
+										<div class="description">A reference to the canvas element</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#canvasSupported">canvasSupported</a></b>
+										</div>
+										<div class="description">True if the canvas element is supported, false otherwise</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#context2D">context2D</a></b>
+										</div>
+										<div class="description">A reference to the 2D context of the canvas element</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#gameObjects">gameObjects</a></b>
+										</div>
+										<div class="description">An array of game objects</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#lastFrame">lastFrame</a></b>
+										</div>
+										<div class="description">The time that the last frame was rendered</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#loadingScreenCol">loadingScreenCol</a></b>
+										</div>
+										<div class="description">The current colour of the loading screen</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#loadingScreenColDirection">loadingScreenColDirection</a></b>
+										</div>
+										<div class="description">The direction of the changes to the loading screen colour.</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#loadingScreenColSpeed">loadingScreenColSpeed</a></b>
+										</div>
+										<div class="description">How quickly to change the loading screen colour per second</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#removedGameObjects">removedGameObjects</a></b>
+										</div>
+										<div class="description">An array of removed game objects</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#resourcesLoaded">resourcesLoaded</a></b>
+										</div>
+										<div class="description">True if the resources supplied to the ResourceManager are all loaded, false otherwise</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#xScroll">xScroll</a></b>
+										</div>
+										<div class="description">The global scrolling value of the x axis</div>
+									</td>
+								</tr>
+							
+								<tr>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont">
+										<b><a href="../symbols/GameObjectManager.html#yScroll">yScroll</a></b>
+										</div>
+										<div class="description">The global scrolling value of the y axis</div>
+									</td>
+								</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			
+			
+			
+		
+<!--
+#### METHODS SUMMARY
+-->
+		
+			
+			
+			<div class="props">
+				<h2 class="sectionTitle">Method Summary</h2>
+				
+				
+					<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class GameObjectManager.">
+						<thead>
+							<tr>
+								<th scope="col">Method Attributes</th>
+								<th scope="col">Method Name and Description</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							
+							
+								<tr
+									 class='item0'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#addGameObject">addGameObject</a></b>(gameObject)
+										</div>
+										<div class="description">Adds a new GameObject to the gameObjects collection</div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item1'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#addNewGameObjects">addNewGameObjects</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item2'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#draw">draw</a></b>()
+										</div>
+										<div class="description">The render loop</div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item3'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#keyDown">keyDown</a></b>(event)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item4'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#keyUp">keyUp</a></b>(event)
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item5'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#removeGameObject">removeGameObject</a></b>(gameObject)
+										</div>
+										<div class="description">Removes a GameObject from the gameObjects collection</div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item6'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#removeOldGameObjects">removeOldGameObjects</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item7'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#shutdownAll">shutdownAll</a></b>()
+										</div>
+										<div class="description"></div>
+									</td>
+								</tr>
+							
+								<tr
+									 class='item8'
+								>
+									<td class="attributes">&nbsp;</td>
+									<td class="nameDescription">
+										<div class="fixedFont"><b><a href="../symbols/GameObjectManager.html#startupGameObjectManager">startupGameObjectManager</a></b>()
+										</div>
+										<div class="description">Initialises this object</div>
+									</td>
+								</tr>
+							
+						</tbody>
+					</table>
+				
+			
+				
+			</div>
+		
+		
+<!--
+#### EVENTS SUMMARY
+-->
+		
+<!--
+#### CONSTRUCTOR DETAILS
+-->
+		
+			<div class="details props">
+				<div class="innerProps">
+					<h2 class="sectionTitle" id="constructor">
+						Class Detail
+					</h2>
+					
+					<div class="fixedFont">
+						<b>GameObjectManager</b>()
+					</div>
+					
+					<div class="description">
+						A manager for all the objects in the game
+						<br /><i>Author: </i><a href="mailto:thierry.prost@gmail.com">Thierry PROST</a>.
+					</div>
+					
+					
+				
+					
+					
+					
+				</div>
+			</div>
+		
+<!--
+#### FIELD DETAILS
+-->
+		
+			<div class="details props">
+				<div class="innerProps">
+					<h2 class="sectionTitle">
+						Field Detail
+					</h2>
+					
+					
+						<div class="fixedFont heading" id="addedGameObjects">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Arary}</span>
+							
+							<b>addedGameObjects</b>							
+						</div>
+						
+						<div class="description">
+							An array of new game objects
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="backBuffer">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{HTMLCanvasElement}</span>
+							
+							<b>backBuffer</b>							
+						</div>
+						
+						<div class="description">
+							A reference to the in-memory canvas used as a back buffer
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="backBufferContext2D">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{CanvasRenderingContext2D}</span>
+							
+							<b>backBufferContext2D</b>							
+						</div>
+						
+						<div class="description">
+							A reference to the backbuffer 2D context
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="canvas">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{HTMLCanvasElement}</span>
+							
+							<b>canvas</b>							
+						</div>
+						
+						<div class="description">
+							A reference to the canvas element
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="canvasSupported">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Boolean}</span>
+							
+							<b>canvasSupported</b>							
+						</div>
+						
+						<div class="description">
+							True if the canvas element is supported, false otherwise
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="context2D">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{CanvasRenderingContext2D}</span>
+							
+							<b>context2D</b>							
+						</div>
+						
+						<div class="description">
+							A reference to the 2D context of the canvas element
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="gameObjects">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Arary}</span>
+							
+							<b>gameObjects</b>							
+						</div>
+						
+						<div class="description">
+							An array of game objects
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="lastFrame">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{<a href="../symbols/Date.html">Date</a>}</span>
+							
+							<b>lastFrame</b>							
+						</div>
+						
+						<div class="description">
+							The time that the last frame was rendered
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="loadingScreenCol">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Number}</span>
+							
+							<b>loadingScreenCol</b>							
+						</div>
+						
+						<div class="description">
+							The current colour of the loading screen
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="loadingScreenColDirection">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Number}</span>
+							
+							<b>loadingScreenColDirection</b>							
+						</div>
+						
+						<div class="description">
+							The direction of the changes to the loading screen colour.
+		1 = colour moving towards white
+		-1 = colour moving topwards balck
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="loadingScreenColSpeed">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Number}</span>
+							
+							<b>loadingScreenColSpeed</b>							
+						</div>
+						
+						<div class="description">
+							How quickly to change the loading screen colour per second
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="removedGameObjects">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Arary}</span>
+							
+							<b>removedGameObjects</b>							
+						</div>
+						
+						<div class="description">
+							An array of removed game objects
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="resourcesLoaded">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Boolean}</span>
+							
+							<b>resourcesLoaded</b>							
+						</div>
+						
+						<div class="description">
+							True if the resources supplied to the ResourceManager are all loaded, false otherwise
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="xScroll">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Number}</span>
+							
+							<b>xScroll</b>							
+						</div>
+						
+						<div class="description">
+							The global scrolling value of the x axis
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						<div class="hr"></div>
+					
+						<div class="fixedFont heading" id="yScroll">
+							<span class='lighter'>
+							
+							</span>
+							
+							<span class="light">{Number}</span>
+							
+							<b>yScroll</b>							
+						</div>
+						
+						<div class="description">
+							The global scrolling value of the y axis
+							
+							
+							
+						</div>
+						
+						
+							
+						
+						
+					
+				</div>
+			</div>
+		
+<!--
+#### METHOD DETAILS
+-->		
+		
+			<div class="details props">
+				<div class="innerProps">
+					<h2 class="sectionTitle">
+						Method Detail
+					</h2>
+					
+					<ul class="methodDetail" id="MethodDetail">
+						
+						
+							<li 
+								 class='item0'
+							>
+								<div class="fixedFont heading" id="addGameObject">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>addGameObject</b>(gameObject)
+								</div>
+								
+								<div class="description">
+									Adds a new GameObject to the gameObjects collection
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>gameObject</b>
+												
+											</dt>
+											<dd>The object to add</dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item1'
+							>
+								<div class="fixedFont heading" id="addNewGameObjects">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>addNewGameObjects</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item2'
+							>
+								<div class="fixedFont heading" id="draw">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>draw</b>()
+								</div>
+								
+								<div class="description">
+									The render loop
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item3'
+							>
+								<div class="fixedFont heading" id="keyDown">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>keyDown</b>(event)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>event</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item4'
+							>
+								<div class="fixedFont heading" id="keyUp">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>keyUp</b>(event)
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>event</b>
+												
+											</dt>
+											<dd></dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item5'
+							>
+								<div class="fixedFont heading" id="removeGameObject">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>removeGameObject</b>(gameObject)
+								</div>
+								
+								<div class="description">
+									Removes a GameObject from the gameObjects collection
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+									<dl class="detailList params">
+										<dt class="heading">Parameters:</dt>
+										
+											<dt>
+												<b>gameObject</b>
+												
+											</dt>
+											<dd>The object to remove</dd>
+										
+									</dl>
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item6'
+							>
+								<div class="fixedFont heading" id="removeOldGameObjects">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>removeOldGameObjects</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item7'
+							>
+								<div class="fixedFont heading" id="shutdownAll">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>shutdownAll</b>()
+								</div>
+								
+								<div class="description">
+									
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+								<div class="hr"></div>
+							</li>
+						
+							<li 
+								 class='item8'
+							>
+								<div class="fixedFont heading" id="startupGameObjectManager">
+									<span class='lighter'>
+									
+									</span>
+									
+									
+									
+									<b>startupGameObjectManager</b>()
+								</div>
+								
+								<div class="description">
+									Initialises this object
+									
+									
+									
+									
+								</div>
+								
+								
+								
+								
+								
+								
+									<dl class="detailList nomargin">
+									
+										
+										
+										
+										
+										
+										
+										
+											<dt class="heading">Returns:</dt>
+											
+												<dd>A reference to the initialised object</dd>
+											
+										
+										
+										
+										
+										
+									
+									</dl>
+								
+								
+							</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+		
+<!--
+#### EVENT DETAILS
+-->		
+		
+	</div>
+</div>
+		<script type="text/javascript">
+			wbos.CssTools.MediaQueryFallBack.LoadCss('../css/screen.css', '../css/handheld.css', 660)
+			codeview.classFilter.Init()
+		</script>
+	</body>
+</html>
+
