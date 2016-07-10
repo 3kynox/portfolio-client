@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name adminApp.controller:ProfileCtrl
+ * @name adminApp.controller:ContactCtrl
  * @description
- * # ProfileCtrl
+ * # ContactCtrl
  * Controller of the adminApp
  */
 angular.module('adminApp')
-    .controller('ProfileCtrl', function () {
+    .controller('ContactCtrl', function () {
 
     });

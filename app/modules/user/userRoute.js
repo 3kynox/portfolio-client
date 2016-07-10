@@ -13,16 +13,16 @@ angular
     .module('userApp', [
     ]).config(['$stateProvider', function ($stateProvider) {
     $stateProvider
-        .state('main.user-profile', {
-        url: '/user-profile',
-        controller: 'ProfileCtrl',
-        templateUrl: 'modules/user/views/profile.html',
+        .state('main.user-contact', {
+        url: '/user-contact',
+        controller: 'ContactCtrl',
+        templateUrl: 'modules/user/views/contact.html',
             resolve: {
                 loadMyFiles:function($ocLazyLoad) {
                     return $ocLazyLoad.load({
                         name:'adminApp',
                         files:[
-                            'modules/user/controllers/profile.js'
+                            'modules/user/controllers/contact.js'
                         ]
                     })
                 }
