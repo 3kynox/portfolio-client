@@ -1,0 +1,60 @@
+<div>
+    <div class="header">
+        <h2>Conception <strong>Page</strong></h2>
+        <p class="f-18">Un descriptif du site est détaillé sur cette page.</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel">
+                <div class="panel-content p-t-0">
+                    <div class="row" style="padding-left: 35px;">
+                        <h2>Le présent site est composé de deux parties distinctes : </h2>
+                        <ul>
+                            <li>La partie Serveur hébergée sous Symfony 2.8 LTS dont le développement est consultable sur <a href="https://github.com/3kynox/portfolio-server" target="_blank">http://github.com/3kynox/portfolio-server</a>.</li>
+                            <li>La partie Client est une Single Page Application utilisant AngularJS dont le développement est consultable sur <a href="https://github.com/3kynox/portfolio-client" target="_blank">http://github.com/3kynox/portfolio-client</a>.</li>
+                        </ul>
+                        <h3>Le Serveur</h3>
+                        <p>Le serveur utilise donc le Framework PHP Symfony et fournit une API-REST accessible par tous client autorisés.</p>
+                        <p>Depuis Symfony 2.8, la possibilité d'utiliser le Framework avec un minimum de composants, nommé le <a href="http://symfony.com/blog/new-in-symfony-2-8-symfony-as-a-microframework" target="_blank">Micro-Framework Symfony</a> à été proposé. Le but bien évidemment est de gagner en vitesse & réactivité.</p>
+                        <p>Le premier commit du portfolio-server disponible sur GitHub fait suite à un travail important effectué sur ce Micro-Framework lors de mon dernier passage chez Infonova ou des tests poussés et une multitude de configurations différentes ont pu être éprouvées afin d'obtenir les meilleurs performances.</p>
+                        <p>Couplé à PHP7, on obtient des vitesse d'affichage des données de quelques milli-secondes.</p><br />
+                        <h5><strong>Modèle de Données</strong></h5>
+                        <p>Pour le moment seulement une partie du modèle concernant ce Portfolio à été traitée.</p>
+                        <p>En voici le schéma : </p>
+                        <img src="modules/concept/assets/images/uml.png" />
+                        <p>Par la suite, ce modèle et ses entités seront complétés.</p><br />
+                        <h5><strong>Bundles Utilisés</strong></h5>
+                        <p>- <a href="https://api-platform.com/" target="_blank">API-Platform</a> : Framework permettant de mettre en place les fonctions API-Rest avec la mise à disposition du <a href="http://json-ld.org/" target="_blank">JSON-LD</a> (JavaScript Object Notation for Linked Data) et du vocabulaire <a href="https://www.hydra-cg.com/" target="_blank">Hydra-Core</a> qui sont tout simplement de nouveaux standards en matière d'API.</p>
+                        <p>- <a href="https://github.com/nelmio/NelmioCorsBundle" target="_blank">Nelmio CORS Bundle</a> : Gère les erreurs liées au <a href="https://en.wikipedia.org/wiki/Same-origin_policy" target="_blank">Cross-Domain</a> en javascript.</p>
+                        <p>- <a href="https://github.com/lexik/LexikJWTAuthenticationBundle" target="_blank">Lexik JWT Bundle</a> : Pas encore mis en place mais le sera prochainement. Se charge de sécuriser les échanges de données entre le client et le serveur.</p>
+                        <p>- <a href="https://github.com/FriendsOfSymfony/FOSUserBundle" target="_blank">FOS User Bundle</a> : Pas encore mis en place également. Gère l'identification utilisateurs avec Symfony avec quelques fonctionnalités poussées.</p><br />
+                        <h3>Le Client</h3>
+                        <p>- SPA (Single Page Application)</p>
+                        <p>- Entièrement codé avec HTML5 / JS / AngularJS</p>
+                        <p>- Étant donné que sur une SPA, le code devient très rapidement "fouilli", une volonté de séparer les couches à été mis en place. Cela se passe déjà au niveau de l'URL : </p>
+                        <img src="modules/concept/assets/images/accolade.png" /><br /><br />
+                        <p>Normalement, sur la page d'index ne se trouve que les scripts de base à charger, incluant angular.</p>
+                        <p>La balise <textarea style="height: 20px; border-style: inset; border-width: 0px;" readonly><div ui-view></div></textarea> sur index.html (relié au module de routing d'angular) renvoie vers le module "main" pour traiter le menu latéral et la topbar.</p>
+                        <p>A l'intérieur de la vue html du module "main" se trouve une autre balise <textarea style="height: 20px; border-style: inset; border-width: 0px;" readonly><div ui-view></div></textarea> qui elle se charge de charger un autre module (dashboard, conception, ou autre ...) qui correspond à n'importe quelle page disponible du site.</p>
+                        <p>On se retrouve avec une arborescence composé d'une page index.html avec un dossier "modules" composé du module "main" et de chaque module du site correspondant à chaque page du site. Chaque module est composé lui-même d'un fichier applicatif, d'un fichier définisant la route ainsi que d'un dossier "controllers", "views", "plugins" et "assets" pour gérer chaque aspects du module en question.</p>
+                        <p>On obtient grâce à cette structure une SPA propre, bien découpée, et compatible (avec la partie serveur) avec un modèle Model View Controller.</p>
+                        <p>- Utilisation du plugin ocLazyLoading : En complément, le lazyLoad permet de ne charger que les scripts ou css spécifique à chaque module! Ce qui veut dire que le module "main" possède des scripts globaux, et chaque module de page du site peut executer uniquement ses propres scripts. On voit couramment sur un site développé avec angular une pléthore de scripts exécutés tout au long de la navigation de l'internaute en permanence. Ici le problème est résolu.</p>
+                        <p>- Utilisation du plugin RestAngular qui lui se charge d'aller chercher les données du serveur Symfony.</p><br /><br />
+                        <p><i>Un bug est actuellement présent avec le module "Main" et reste à corriger, ce qui explique pourquoi le menu et la topbar se trouve dans le index.html.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <p class="pull-left sm-pull-reset">
+                    <span>Copyright <span class="copyright">&copy;</span> 2016 </span>
+                    <span>NoXeN</span>.
+                    <span>All rights reserved. </span>
+                </p>
+                <p class="pull-right sm-pull-reset">
+                    <span><a href="#" class="m-r-10">Support</a> | <a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
