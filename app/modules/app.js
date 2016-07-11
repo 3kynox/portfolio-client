@@ -74,7 +74,7 @@ var MakeApp = angular
     }])
     .config(['RestangularProvider', function (RestangularProvider) {
         // The URL of the API endpoint
-        RestangularProvider.setBaseUrl('http://localhost/portfolio/server/web/');
+        RestangularProvider.setBaseUrl('http://noxen.net/portfolio-server/web/');
 
         // JSON-LD @id support
         RestangularProvider.setRestangularFields({
