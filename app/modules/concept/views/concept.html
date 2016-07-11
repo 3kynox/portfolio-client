@@ -40,7 +40,8 @@
                         <p>On obtient grâce à cette structure une SPA propre, bien découpée, et compatible (avec la partie serveur) avec un modèle Model View Controller.</p>
                         <p>- Utilisation du plugin ocLazyLoading : En complément, le lazyLoad permet de ne charger que les scripts ou css spécifique à chaque module! Ce qui veut dire que le module "main" possède des scripts globaux, et chaque module de page du site peut executer uniquement ses propres scripts. On voit couramment sur un site développé avec angular une pléthore de scripts exécutés tout au long de la navigation de l'internaute en permanence. Ici le problème est résolu.</p>
                         <p>- Utilisation du plugin RestAngular qui lui se charge d'aller chercher les données du serveur Symfony.</p><br /><br />
-                        <p><i>Un bug est actuellement présent avec le module "Main" et reste à corriger, ce qui explique pourquoi le menu et la topbar se trouve dans le index.html.</i></p>
+                        <p><i>Seules quelques informations personnelles (visibles sur la page dashboard) sont importées du serveur Symfony par l'intermédiaire de l'API-Rest. Seul le "R" du C<strong>R</strong>UD est donc manipulé. Le modèle UML sera prochainement étendu et le traitement complet du CRUD côté client également.</i></p>
+                        <p><i>Un bug est actuellement présent avec le module "Main" et reste à corriger, ce qui explique pourquoi le menu et la topbar se trouve dans le index.html au lieu de la vue du module "Main".</i></p>
                     </div>
                 </div>
             </div>
